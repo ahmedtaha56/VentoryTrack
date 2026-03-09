@@ -8,7 +8,6 @@
 ![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 <br/>
@@ -66,7 +65,7 @@ VentoryTrack provides **role-based access control**, **real-time stock tracking*
 ### 🔔 Notifications
 - Low stock alerts
 - Product expiry reminders
-- Powered by Supabase Edge Functions (cron jobs) + Firebase Push Notifications
+- Powered by Supabase Edge Functions (cron jobs) + Supabase Realtime
 
 ---
 
@@ -77,7 +76,7 @@ VentoryTrack provides **role-based access control**, **real-time stock tracking*
 | **Frontend** | React Native, Expo |
 | **Backend** | Supabase (Auth, Database, Storage, Edge Functions) |
 | **Database** | PostgreSQL via Supabase |
-| **Push Notifications** | Firebase Cloud Messaging |
+| **Push Notifications** | Supabase Edge Functions + Realtime |
 | **Charts & Analytics** | React Native chart libraries |
 
 ---
@@ -89,7 +88,6 @@ VentoryTrack provides **role-based access control**, **real-time stock tracking*
 - [Node.js](https://nodejs.org/) v18+
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
 - [Supabase](https://supabase.com/) project (free tier works)
-- [Firebase](https://firebase.google.com/) project for push notifications
 
 ### Installation
 
@@ -105,7 +103,7 @@ npm install
 
 # 4. Configure environment variables
 cp .env.example .env
-# Fill in your Supabase URL, Anon Key, and Firebase config
+# Fill in your Supabase URL and Anon Key
 
 # 5. Start the development server
 expo start
@@ -118,7 +116,6 @@ Create a `.env` file in the root directory:
 ```env
 SUPABASE_URL=your_supabase_project_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
-FIREBASE_API_KEY=your_firebase_api_key
 ```
 
 ---
@@ -131,11 +128,11 @@ FIREBASE_API_KEY=your_firebase_api_key
 | 2 | **Product & Category** — Add, Edit, List, Detail | ✅ |
 | 3 | **Stock Management** — Stock In/Out, stock_logs | ✅ |
 | 4 | **Dashboard** — Cards, Charts, Summary | ✅ |
-| 5 | **Sales & Invoice** — Create invoices, Sales list, Invoice detail | 🔄 In Progress |
-| 6 | **Reports & Analytics** — Filters, Profit calculation | 🔄 In Progress |
-| 7 | **Staff & Roles** — Role-based permissions | 📅 Planned |
-| 8 | **Notifications** — Alerts, reminders | 📅 Planned |
-| 9 | **Settings & Polish** — Dark mode, Profile, Logout | 📅 Planned |
+| 5 | **Sales & Invoice** — Create invoices, Sales list, Invoice detail | ✅ |
+| 6 | **Reports & Analytics** — Filters, Profit calculation | ✅ |
+| 7 | **Staff & Roles** — Role-based permissions | ✅ |
+| 8 | **Notifications** — Alerts, reminders | ✅ |
+| 9 | **Settings & Polish** — Dark mode, Profile, Logout | ✅ |
 
 ---
 
