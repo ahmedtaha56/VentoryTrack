@@ -7,6 +7,11 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    
+    "extra": {
+      "OPENROUTER_API_KEY": "${EXPO_PUBLIC_OPENROUTER_API_KEY}"
+    },
+    
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
